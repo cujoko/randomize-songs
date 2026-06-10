@@ -15,6 +15,11 @@ def get_argparser() -> ArgumentParser:
 
     # optional
     parser.add_argument(
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__}",
+    )
+    parser.add_argument(
         "-n",
         default=255,
         dest="files_portion_size",
