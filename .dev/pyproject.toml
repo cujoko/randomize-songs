@@ -1,6 +1,6 @@
 [build-system]
-build-backend = "setuptools.build_meta"
-requires = ["setuptools>=64"]
+build-backend = "pdm.backend"
+requires = ["pdm-backend"]
 
 [dependency-groups]
 dev = [
@@ -21,10 +21,10 @@ classifiers = [
     "Topic :: Utilities",
 ]
 description = "Utility for randomizing songs"
+dynamic = ["version"]
 keywords = ["song", "music", "mp3"]
 name = "randomize-songs"
 requires-python = ">=3.10"
-version = "0.1.0"
 
 [project.scripts]
 randomize-songs = "randomize_songs.__main__:run"
@@ -32,11 +32,13 @@ randomize-songs = "randomize_songs.__main__:run"
 [project.urls]
 repository = "https://github.com/Cujoko/randomize-songs"
 
-[tool.setuptools.package-dir]
-"" = "../src"
+[tool.pdm.build]
+package-dir = "../src"
 
-[tool.setuptools.packages.find]
-where = ["../src"]
+[tool.pdm.version]
+path = "../src/randomize_songs/_version.py"
+pattern = '^__version__\s*=\s*"([^"]+)"'
+source = "file"
 
 [tool.pytest.ini_options]
 addopts = "-q"
