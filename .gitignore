@@ -14,10 +14,10 @@ ENV/
 .python-version
 __pypackages__/
 
-# PDM
+# Build tooling leftovers
 .pdm-python
 .pdm-build/
-/.dev/pdm.lock
+/.dev/uv.lock
 
 # Packaging and build artifacts
 build/
