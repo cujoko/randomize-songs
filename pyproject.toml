@@ -25,7 +25,7 @@ dynamic = ["version"]
 keywords = ["song", "music", "mp3"]
 name = "randomize-songs"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.6"
 
 [project.scripts]
 randomize-songs = "randomize_songs.__main__:run"

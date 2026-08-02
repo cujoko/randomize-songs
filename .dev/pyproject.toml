@@ -24,7 +24,7 @@ description = "Utility for randomizing songs"
 dynamic = ["version"]
 keywords = ["song", "music", "mp3"]
 name = "randomize-songs"
-requires-python = ">=3.10"
+requires-python = ">=3.6"
 
 [project.scripts]
 randomize-songs = "randomize_songs.__main__:run"
