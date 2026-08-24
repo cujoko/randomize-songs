@@ -30,7 +30,7 @@ requires-python = ">=3.6"
 randomize-songs = "randomize_songs.__main__:run"
 
 [project.urls]
-repository = "https://github.com/Cujoko/randomize-songs"
+repository = "https://github.com/cujoko/randomize-songs"
 
 [tool.pdm.build]
 package-dir = "../src"
