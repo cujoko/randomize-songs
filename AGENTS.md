@@ -1,4 +1,4 @@
-# Codex Agent Notes
+# Agent Notes
 
 <!-- agent-rules:begin | управляется sync-agent-rules.py, правьте dev-utils/agent-rules/ -->
 
