@@ -19,7 +19,7 @@ uv run --project .dev ruff check .
 Через общий pipx-скрипт (предпочтительно):
 
 ```powershell
-C:\Dev\PowerShell\dev-utils\install-pipx-editable.ps1
+C:\Dev\Others\dev-utils\install-pipx-editable.ps1
 ```
 
 Либо напрямую через uv:
